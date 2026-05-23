@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Learning Log Platform Logo</title>
+  <desc id="desc">A black rounded-square learning log icon with a white notebook page and task lines.</desc>
+  <defs>
+    <linearGradient id="shell" x1="96" x2="416" y1="72" y2="444" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#151515" />
+      <stop offset="0.52" stop-color="#050505" />
+      <stop offset="1" stop-color="#171717" />
+    </linearGradient>
+    <linearGradient id="paper" x1="158" x2="358" y1="104" y2="344" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" />
+      <stop offset="1" stop-color="#f3f3f1" />
+    </linearGradient>
+    <filter id="shadow" x="25" y="25" width="462" height="462" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity="0.16" />
+    </filter>
+  </defs>
+
+  <rect x="54" y="54" width="404" height="404" rx="92" fill="url(#shell)" filter="url(#shadow)" />
+
+  <path
+    fill="#fff"
+    d="M154 112c0-10 8-18 18-18h19v240c0 21 17 38 38 38h169c-9 27-34 46-64 46H190c-37 0-68-31-68-68V126c0-8 6-14 14-14h18Z"
+  />
+  <rect x="188" y="94" width="186" height="198" rx="14" fill="url(#paper)" />
+  <rect x="188" y="94" width="186" height="198" rx="14" fill="none" stroke="#e8e8e6" stroke-width="3" />
+  <circle cx="326" cy="139" r="17" fill="#0b0b0c" />
+  <rect x="221" y="186" width="125" height="20" rx="10" fill="#0b0b0c" />
+  <rect x="221" y="230" width="125" height="19" rx="9.5" fill="#9f9f9f" />
+  <path fill="#0b0b0c" d="M374 288h54v76c0 30-24 54-54 54h-40c25 0 46-21 46-46v-78c0-3-3-6-6-6Z" opacity="0.92" />
+</svg>

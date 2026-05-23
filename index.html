@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Log Platform</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-lockup">
+          <img class="brand-logo" src="assets/logo.svg" alt="Learning Log Platform logo" />
+          <div>
+            <p class="kicker">Learning Log Platform</p>
+            <h1>Learning Log Platform</h1>
+          </div>
+        </div>
+        <div class="date-chip" id="todayChip" aria-live="polite"></div>
+      </header>
+
+      <section class="calendar-panel" aria-label="Monthly progress calendar">
+        <div class="calendar-toolbar">
+          <button class="icon-button" id="prevMonth" type="button" aria-label="Previous month" title="Previous month">
+            <span aria-hidden="true">‹</span>
+          </button>
+          <h2 id="monthLabel"></h2>
+          <button class="icon-button" id="nextMonth" type="button" aria-label="Next month" title="Next month">
+            <span aria-hidden="true">›</span>
+          </button>
+        </div>
+        <div class="weekday-row" aria-hidden="true">
+          <span>Mon</span>
+          <span>Tue</span>
+          <span>Wed</span>
+          <span>Thu</span>
+          <span>Fri</span>
+          <span>Sat</span>
+          <span>Sun</span>
+        </div>
+        <div class="calendar-grid" id="calendarGrid"></div>
+      </section>
+
+      <main class="workspace">
+        <section class="panel log-panel" aria-labelledby="dailyLogTitle">
+          <div class="panel-head">
+            <div>
+              <p class="section-label" id="selectedDateLabel"></p>
+              <h2 id="dailyLogTitle">Daily Log</h2>
+            </div>
+            <button class="icon-button add-button" id="addTask" type="button" aria-label="Add task" title="Add task">
+              <span aria-hidden="true">+</span>
+            </button>
+          </div>
+
+          <form id="dailyForm">
+            <div class="task-list" id="taskList"></div>
+            <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+            <button class="primary-button" type="submit">Submit Daily Report</button>
+          </form>
+        </section>
+
+        <section class="panel report-panel" aria-labelledby="dailyReportTitle">
+          <div class="panel-head">
+            <div>
+              <p class="section-label">Generated Output</p>
+              <h2 id="dailyReportTitle">Daily Report</h2>
+            </div>
+          </div>
+          <article class="report-card empty" id="dailyReport" aria-live="polite"></article>
+        </section>
+
+        <section class="panel weekly-panel" aria-labelledby="weeklyReportTitle">
+          <div class="panel-head">
+            <div>
+              <p class="section-label" id="weekRangeLabel"></p>
+              <h2 id="weeklyReportTitle">Weekly Report</h2>
+            </div>
+            <button class="secondary-button" id="generateWeekly" type="button">Generate</button>
+          </div>
+          <p class="form-message" id="weeklyMessage" role="status" aria-live="polite"></p>
+          <article class="report-card empty" id="weeklyReport" aria-live="polite"></article>
+        </section>
+
+        <section class="panel monthly-panel" aria-labelledby="monthlyReportTitle">
+          <div class="panel-head">
+            <div>
+              <p class="section-label" id="monthRangeLabel"></p>
+              <h2 id="monthlyReportTitle">Monthly Report</h2>
+            </div>
+            <button class="secondary-button" id="generateMonthly" type="button">Generate</button>
+          </div>
+          <p class="form-message" id="monthlyMessage" role="status" aria-live="polite"></p>
+          <article class="report-card empty" id="monthlyReport" aria-live="polite"></article>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "learning-log-platform",
+  "version": "1.0.0",
+  "description": "A clean learning summary platform for daily, weekly, and monthly study reports.",
+  "private": false,
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "start:windows": "py -m http.server 8000",
+    "serve": "npx serve . -l 8000"
+  },
+  "keywords": [
+    "learning-log",
+    "daily-report",
+    "weekly-report",
+    "monthly-report",
+    "study-tracker"
+  ],
+  "author": "Caijingnian",
+  "license": "MIT"
+}
